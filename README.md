@@ -19,7 +19,7 @@ Make sure all the files are in the same folder. Run the "build.sh" file via the 
 
 Python interface – run the command:
 
-python3 spkmeans.py *K* *CMD* *FILE*
+./python3 spkmeans.py *K* *CMD* *FILE*
 
 C interface – run the command:
 
@@ -36,7 +36,7 @@ Where you substitute:
 2.5.	jacobi - outputs the eigenvalues followed by the eigenvectors of the given datapoints.
 3.	*FILE* - the input file in txt or csv format. Each line represents a datapoint.
 
-Remark: While wam, ddg, lnorm and spk commands use the calculations of previous commands on the given datapoints, jacobi commands performs its calculations directly on the given datapoints. This was an instruction. For example. lnorm command first use wam on the datapoints, then uses ddg on the result and lastly performs its calculations.
+Remark: While wam, ddg, lnorm and spk commands use the calculations of previous commands on the given datapoints, jacobi commands performs its calculations directly on the given datapoints. This was an instruction. For example, lnorm command first calculates wam on the datapoints, then calculates DDG from the result and lastly performs its calculations.
 
 
 
